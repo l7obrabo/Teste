@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globo Esporte - Notícias de Esportes</title>
+    <!-- Estilos da tela de cadastro -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos existentes do site -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Tela de Cadastro (aparece primeiro) -->
+    <section id="register-screen" class="register-screen">
+        <div class="register-card">
+            <!-- Título inspirado no GE -->
+            <h1 class="register-title">ge</h1>
+            <h2 class="register-subtitle">Crie sua conta</h2>
+
+            <!-- Formulário de cadastro -->
+            <form id="register-form" class="register-form">
+                <!-- Campo: Nome -->
+                <label for="name" class="register-label">Nome</label>
+                <input type="text" id="name" name="name" class="register-input" placeholder="Seu nome" required>
+
+                <!-- Campo: Email -->
+                <label for="email" class="register-label">Email</label>
+                <input type="email" id="email" name="email" class="register-input" placeholder="seu@email.com" required>
+
+                <!-- Campo: Senha -->
+                <label for="password" class="register-label">Senha</label>
+                <input type="password" id="password" name="password" class="register-input" placeholder="********" minlength="6" required>
+
+                <!-- Botão de ação: Cadastrar -->
+                <button type="submit" class="register-button">Cadastrar</button>
+            </form>
+
+            <!-- Texto auxiliar/termos -->
+            <p class="register-hint">Ao continuar, você concorda com nossos termos de uso.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo do site (fica oculto até o cadastro) -->
+    <div id="site-content" style="display:none">
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -295,6 +330,8 @@
             </div>
         </div>
     </footer>
+
+    </div>
 
     <script src="script.js"></script>
 </body>

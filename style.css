@@ -1,0 +1,112 @@
+/* Estilos da tela de cadastro (inspirados no GE) */
+
+/* Layout base da tela inicial */
+.register-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    padding: 24px;
+}
+
+/* Cartão central do cadastro */
+.register-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 28px;
+}
+
+/* Título "ge" estilizado */
+.register-title {
+    margin: 0 0 4px 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #1e40af;
+    text-align: center;
+}
+
+/* Subtítulo */
+.register-subtitle {
+    margin: 0 0 20px 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #334155;
+    text-align: center;
+}
+
+/* Formulário */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-label {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #475569;
+}
+
+.register-input {
+    height: 42px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 0 12px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Botão de cadastro */
+.register-button {
+    margin-top: 8px;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background: #1e40af;
+    color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.register-button:hover {
+    background: #1b3a9b;
+    transform: translateY(-1px);
+}
+
+.register-button:active {
+    transform: translateY(0);
+}
+
+/* Texto auxiliar */
+.register-hint {
+    margin-top: 14px;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .register-card { padding: 22px; }
+    .register-title { font-size: 40px; }
+}
+
+
